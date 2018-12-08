@@ -1,0 +1,109 @@
+.sky{
+  float: right;
+}
+.sun {
+  height: 200px;
+  width: 200px;
+  background: #F8EE45;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top:50px;
+  left:1350px;
+  border:5px solid #F9EC75;
+  transition: top 0.1s ease;
+}
+
+.beam {
+  width:5px;
+  height:30px;
+  background:#F8EE45;
+  position:absolute;
+}
+
+.beam1 {
+  transform: rotate(0deg);
+  top:-20px;
+  left:120px;
+}
+.beam2 {
+  transform: rotate(45deg);
+  top:20px;
+  left:220px;
+}
+.beam3 {
+  transform: rotate(90deg);
+  top:110px;
+  left:250px;
+}
+.beam4 {
+  transform: rotate(135deg);
+  top:200px;
+  left:220px;
+}
+.beam5 {
+  transform: rotate(180deg);
+  top:240px;
+  left:120px;
+}
+.beam6 {
+  transform: rotate(225deg);
+  top:200px;
+  left:20px;
+}
+.beam7 {
+  transform: rotate(270deg);
+  top:110px;
+  left:-10px;
+}
+.beam8 {
+  transform: rotate(315deg);
+  top:20px;
+  left:20px;
+}
+.sunbeams {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    animation: spin 28s linear 0s infinite;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes blink {
+    0% { height: 15px; top:0; }
+    99% { height: 15px; top:0; }
+    100% { height: 0px; top:7px; }
+}
+.eyes {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    top: 90px;
+    left: 45px;
+}
+.eyes-l {
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  left:0; 
+    animation: blink 7s linear 0s infinite;
+}
+.eyes-r {
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  right:0;
+    animation: blink 7s linear 0s infinite;
+}
+
+.sun .eyes-l, .sun .eyes-r {
+  background:#55D0FE;
+}
